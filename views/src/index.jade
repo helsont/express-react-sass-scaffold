@@ -1,0 +1,31 @@
+html
+  head
+    meta(charSet='utf-8')
+    meta(httpEquiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    title
+      | RILEY
+    meta(name='description', content="The Real Estate Professional's Personal Assistant")
+    meta(name='keywords', content='real estate assitant, assistant, apartment, listing, personal assistant, find apartment, search apartment, rentals, real estate, properties')
+    meta(name='author', content='Riley')
+    
+    meta(property='og:url', content='https://getrileynow.com')
+    meta(property='og:type', content='website')
+    meta(property='og:title', content='Get Early Access')
+    meta(property='og:description', content="The Real Estate Professional's Personal Assistant")
+    // -Import Fonts
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,300,100,900,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Quicksand', rel='stylesheet', type='text/css')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS' crossorigin='anonymous')
+    link(rel='stylesheet' href='styles/style.css')
+  body
+    #mount
+    != markup
+    script window.INIT_PROPS = !{props}
+    
+    script(src="https://cdn.socket.io/socket.io-1.4.5.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js")
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.min.js')
+    script(src='src/bundle.js')
